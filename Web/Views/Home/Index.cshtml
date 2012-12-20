@@ -1,0 +1,30 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Index";
+}
+
+@section scripts {
+<script>
+    $(function() {
+        $( "#search" ).autocomplete({
+            source: "/Home/Search",
+            minLength: 1,
+            select: function( event, ui ) {
+                console.log( ui.item ?
+                    "Selected value: " + ui.item.value + " id: " + ui.item.id :
+                    "Nothing selected, input was " + this.value );
+            }
+        });
+    });
+</script>
+}
+
+<div class="ui-widget" style="width: 300px; float: left;">
+    <input id="search" />
+</div>
+
+<p style="float: left; margin: 0;">
+    @foreach (var s in Model) {
+        @s<br />
+    }
+</p> 

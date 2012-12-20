@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{B36E1355-CCEC-49ED-BFD3-2FA7D82E8CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B6CE72E0-F164-455E-8DEA-53DC9FBBC171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzySearch", "FuzzySearch\FuzzySearch.csproj", "{DDD058FA-D142-4F73-A9D4-69F9EB80B4CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B36E1355-CCEC-49ED-BFD3-2FA7D82E8CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36E1355-CCEC-49ED-BFD3-2FA7D82E8CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36E1355-CCEC-49ED-BFD3-2FA7D82E8CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36E1355-CCEC-49ED-BFD3-2FA7D82E8CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6CE72E0-F164-455E-8DEA-53DC9FBBC171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CE72E0-F164-455E-8DEA-53DC9FBBC171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CE72E0-F164-455E-8DEA-53DC9FBBC171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CE72E0-F164-455E-8DEA-53DC9FBBC171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD058FA-D142-4F73-A9D4-69F9EB80B4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD058FA-D142-4F73-A9D4-69F9EB80B4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD058FA-D142-4F73-A9D4-69F9EB80B4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD058FA-D142-4F73-A9D4-69F9EB80B4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
