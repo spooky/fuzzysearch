@@ -4,3 +4,4 @@ _ReSharper*
 *.sln.DotSettings.user
 bin
 obj
+TestResults

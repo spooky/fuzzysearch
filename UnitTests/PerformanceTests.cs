@@ -120,6 +120,34 @@ namespace UnitTests
             Console.WriteLine("LCSTweaked: " + tweakedTime);
 
             Console.WriteLine("Diff: " + (primeTime - tweakedTime));
-        } 
+        }
+
+        [TestMethod]
+        public void LCSTweakedVsLCSReTweaked()
+        {
+            const int numIterations = 100000;
+
+            stopwatch.Reset();
+            stopwatch.Start();
+            for (var i = 0; i < numIterations; i++)
+            {
+                StringUtils.LongestCommonSubsequenceLengthReTweaked("marka", "ariada");
+            }
+            stopwatch.Stop();
+            var tweakedTime = stopwatch.Elapsed;
+            Console.WriteLine("LCSReTweaked: " + tweakedTime);
+
+            stopwatch.Reset();
+            stopwatch.Start();
+            for (var i = 0; i < numIterations; i++)
+            {
+                StringUtils.LongestCommonSubsequenceLengthTweaked("marka", "ariada");
+            }
+            stopwatch.Stop();
+            var primeTime = stopwatch.Elapsed;
+            Console.WriteLine("LCSTweaked: " + primeTime);
+
+            Console.WriteLine("Diff: " + (primeTime - tweakedTime));
+        }
     }
 }

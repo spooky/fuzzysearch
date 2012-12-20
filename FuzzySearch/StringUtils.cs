@@ -198,5 +198,44 @@ namespace FuzzySearch
 
             return prev;
         }
+
+        // lower memory usage than tweaked version but a bit slower according to tests
+        public static int LongestCommonSubsequenceLengthReTweaked(string str, string pattern)
+        {
+            if (string.IsNullOrEmpty(str) || string.IsNullOrEmpty(pattern)) return 0;
+            if (str.Length < pattern.Length)
+            {
+                var temp = str;
+                str = pattern;
+                pattern = temp;
+            }
+
+            var lengths = new int[pattern.Length + 1];
+            var prev = 0;
+            var prevPush = 0;
+
+            for (var i = 1; i < str.Length + 1; i++)
+            {
+                prev = 0;
+
+                for (var j = 1; j < pattern.Length + 1; j++)
+                {
+                    if (j > 1)
+                        lengths[j - 2] = prevPush;
+
+                    prevPush = prev;
+
+                    if (str[i - 1] == pattern[j - 1])
+                        prev = lengths[j - 1] + 1;
+                    else
+                        prev = Math.Max(prev, lengths[j]);
+                }
+
+                lengths[lengths.Length - 2] = prevPush;
+                lengths[lengths.Length - 1] = prev;
+            }
+
+            return prev;
+        }
     }
 }

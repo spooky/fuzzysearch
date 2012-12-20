@@ -54,6 +54,7 @@
     <Compile Include="DamerauLevenshteinTweakedTest.cs" />
     <Compile Include="LevenshteinPrimeTest.cs" />
     <Compile Include="LevenshteinTweakedTest.cs" />
+    <Compile Include="LongestCommonSubsequenceReTweakedTest.cs" />
     <Compile Include="LongestCommonSubsequenceTest.cs" />
     <Compile Include="LongestCommonSubsequenceTweakedTest.cs" />
     <Compile Include="PerformanceTests.cs" />
