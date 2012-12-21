@@ -11,7 +11,6 @@ namespace Web.Controllers
                                         {
                                             "B57EA1EC-0C30-459D-ACB6-A69629C73FDF",
                                             "test",
-                                            "Krzysztof Szczęsny",
                                             "foo",
                                             "2F873BC7-1744-40C9-8F0D-5F0951EFD78B",
                                             "foobar",
