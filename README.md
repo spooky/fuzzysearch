@@ -7,3 +7,5 @@ This allows greater flexibility in the search term like:
 
 * tolerates typos
 * allows to type non-adjacent characters so 'tiae' will give 'this is an example' a high rank in the results
+
+Released unter the [MIT license](http://opensource.org/licenses/MIT).
